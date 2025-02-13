@@ -1,0 +1,2 @@
+#AD&D stat generator
+This repo houses a collection of python scripts to generate an array 12 of AD&D character stats so users can pick the best one. I hope in the future to automate the full character sheet creation. Advanced dungeons and dragons (AD&D) is widely considered the first addition to the first version of Dungeons and dragons. Far from the modern 5th editon of dungeons and dragons (5e) AD&D is essentially 1.5e building on the first version and removing copyrighted charactes.
