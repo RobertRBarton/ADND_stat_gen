@@ -10,10 +10,11 @@ def normalized_number_str(number:int)->int:
         return str(number)+",   "
 
 class stat_array:
-    def __init__(self):
-        self.array:list[int]=list()
-        for _ in range(6):
-            self.array.append(gen_stat())
+    def __init__(self,array:list[int]=list()):
+        self.array=array
+        if not array:
+            for _ in range(6):
+                self.array.append(gen_stat())
         
         self.STR:int=self.array[0]
         self.INT:int=self.array[1]
@@ -22,7 +23,7 @@ class stat_array:
         self.CON:int=self.array[4]
         self.CHR:int=self.array[5]
         self.SUM:int=sum(self.array)
-        self.is_good:bool=sum(self.array)>70
+        self.is_good:bool=self.SUM>70
 
     def __str__(self)->str:
         output:str=""
